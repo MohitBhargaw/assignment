@@ -1,0 +1,81 @@
+package intel;
+import java.util.IllegalFormatConversionException;
+import java.util.Scanner;
+public class lockers {
+public static void main(String[] args)
+{
+	Scanner obj=new Scanner(System.in);
+	DisplayClass.welcomeMessage("Mohit Bhargaw");
+	String str=obj.next();    
+	if(str.charAt(0)=='M'|| str.charAt(0)=='m')  
+	{  
+		if(fileHandling.isFileExist())
+		{
+			if(fileHandling.createFolder())
+					System.out.println();
+		}
+	}
+	System.out.println("You are currently working on main directory for all operations");
+	System.out.println("Please make sure you enter correct name of file or options");
+	boolean flag=true;boolean flag2= false;
+	while(flag)
+	{
+		DisplayClass.MainOptions();
+		try  
+		{
+			System.out.println("Enter option number");
+			String s=obj.next();
+			int case1= Integer.parseInt(s);
+			switch (case1)
+			{
+			case 1: fileHandling.DisplayFiles();
+		break;
+			case 2: flag2=true;
+			break;
+			case 3: flag=false;
+			break;
+			default: System.out.println("Please enter valid number");
+			break;
+}
+			System.out.println("\n");
+			while(flag2)
+			{
+				DisplayClass.OtherOptions();
+				try
+				{
+					System.out.println("Enter option number you wish to choose");
+					String s1=obj.next();
+					int case2= Integer.parseInt(s1);
+					switch(case2)
+					{
+					case 1: System.out.println("Enter file name without space");
+					String fileName=obj.next();
+					fileHandling.AddFile(fileName);
+					break;    
+					case 2: System.out.println("Enter file name without space");
+					String fileName1=obj.next();
+					fileHandling.DeleteAFile(fileName1);
+					break;
+					case 3: System.out.println("Enter file name without space");
+					String fileName2=obj.next();
+					fileHandling.SearchAFile(fileName2);
+					break;
+					case 4: flag2=false;
+					break;
+					default: System.out.println("Please enter the valid number");
+					}
+					System.out.println("\n");
+			}catch(IllegalFormatConversionException e)
+			{
+				System.out.println("Please make sure you enter above number for options");
+					}
+				}
+		} catch(IllegalFormatConversionException e)
+		{
+			System.out.println("Please make sure enter above number for options");
+		}
+	}
+		System.out.println("Thanks for using lockedme.com");
+				}
+}  
+      

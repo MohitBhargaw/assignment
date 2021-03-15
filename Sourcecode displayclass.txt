@@ -1,0 +1,35 @@
+package intel;
+
+public class DisplayClass {
+public static void welcomeMessage(String a)
+{
+	System.out.println("Welcome to Lockedme.com \ndeveloped by "+a+ " "+ "press any key to continue");
+}
+public static void MainOptions()
+{
+	String string= "press \"1\", \"2\" or \"3\" for \n"+ "1 to display file name \n2 to display other options \n"+"3 to exit";
+	System.out.println(string);
+}
+public static void OtherOptions()
+{
+	String string= "press \"1\", \"2\" or \"3\" or \"4\" for \n"+ "1 to add a file \n2 to delete a file \n"+"3 to search a file \n4 exit return to main menu";
+	System.out.println(string);
+
+}
+public static void PrintFiles(String[] string)
+{
+	if(string==null)
+	{
+		System.out.println("No file is present in the main directory");
+	}
+	else
+	{
+		System.out.println("file is present in the directory choose appropriate options to review it");
+		for(String s: string)
+		{
+			System.out.println(s);
+		}
+	}
+}
+}
+   
