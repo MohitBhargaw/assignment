@@ -1,0 +1,52 @@
+1) Project and developer options:-
+ In this project there is a welcome message appears on the console window "Welcome to Lockedme.com 
+   developed by Mohit Bhargaw press any key to continue". The user enters any key from the keyword.
+2) Then it asks user to enter file options which include:-
+(i)  1 to display file name 
+(ii) to display other options 
+(iii)to exit
+3) For selecting the desired option by user:-
+ (i)   it will show the file present in the directory.
+ (ii)  Display the other options include:-
+1. to add a file 
+2. to delete a file 
+3. to search a file 
+4. exit return to main menu.
+ (iii) for exit it will redirect to display message "Thanks for using lockedme.com."
+ 
+2) Sprint Planned and task achieved in them:-
+(i)   Creating java code for project.
+(ii)  Creating filehandling for project.
+(iii) Identifying and correcting bugs.
+iv)   Creating methods, class and objects for project.
+
+3) Core concepts include:-
+(i)  FileHandling for add,delete file, search a file.
+(ii) Sorting the list in ascending order.
+(iii)Scanner class for inputs.
+(iv) Exception handling using try catch statements.
+(v)  Looping statements for traversal.
+
+4) Github Link for the project:- 
+https://github.com/MohitBhargaw/assignment
+
+5) Conclusion on enhancing the application:-
+(i)  The format for display file can be in both asceding or descending order as per the user.
+(ii) There should be a limit to view files.
+(iii) Display file information like size of file in bytes, Writeable and Readable.
+
+6) Unique selling points of the application:-
+1) The user can switch between main options and other options as per his choice and many number of times.
+2) Program includes add,delete file, search a file many number of times.
+3) The display message enables user to to identify who has made the program and the features contained in it.
+4) It does not require prerequisite commands.
+
+7) Algorithms of this program:-
+1) Start
+2) Display message
+3) Ask to enter any key.
+4) Display main options and ask to enter input.
+5) for option 1 display files after checkig if present or not.
+6) for option 2 display other options to add,delete, search a file preset or not.
+7) for option 3 to exit return to main display console. 
+8) exit termination of program.
